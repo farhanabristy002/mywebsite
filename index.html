@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colorful Makeup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href=" ">Colorful Makeup</a >
+  <ul>
+    <li><a href="#blush">Blush</a ></li>
+    <li><a href="#lipstick">Lipstick</a ></li>
+    <li><a href="#eyeshadow">Eyeshadow</a ></li>
+    <li><a href="#tips">Tips</a ></li>
+    <li><a href="#about">About</a ></li>
+    <li><a href="#contact">Contact</a ></li>
+  </ul>
+  <button id="theme-btn" class="icon-btn" type="button" aria-label="Switch to dark mode">Dark</button>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <h1>Colorful Makeup</h1>
+    <p>Browse blush, lipstick and eyeshadow looks in one place. Pick a category and tap any photo to see it larger.</p >
+    <div class="btns">
+      <a class="btn" href="#blush">Blush</a >
+      <a class="btn alt2" href="#lipstick">Lipstick</a >
+      <a class="btn alt" href="#eyeshadow">Eyeshadow</a >
+    </div>
+  </div>
+  <div class="collage" aria-hidden="true">
+    <img src="images/OIP.webp" alt="">
+    <img src="images/OIP%20(1).webp" alt="">
+    <img src="images/download.webp" alt="">
+  </div>
+</header>
+
+<!-- Filter, search and favorites -->
+<div class="toolbar">
+  <div class="filters" role="group" aria-label="Filter by category">
+    <button class="chip active" type="button" data-cat="all">All</button>
+    <button class="chip" type="button" data-cat="blush">Blush</button>
+    <button class="chip" type="button" data-cat="lipstick">Lipstick</button>
+    <button class="chip" type="button" data-cat="eyeshadow">Eyeshadow</button>
+    <button class="chip" type="button" id="fav-filter" aria-pressed="false">♥ Favorites</button>
+  </div>
+  <input id="search" type="search" placeholder="Search photos..." aria-label="Search photos">
+</div>
+
+<main>
+
+  <section class="cat" id="blush">
+    <div class="cat-head">
+      <h2>Blush</h2>
+      <p>Soft pink cheeks, liquid blush and cheek swatches.</p >
+    </div>
+    <div class="shades" aria-label="Blush shades">
+      <span style="background:#f4a6b8" title="Soft pink"></span>
+      <span style="background:#e8788f" title="Rose"></span>
+      <span style="background:#f08a73" title="Coral"></span>
+      <span style="background:#d9825f" title="Peach"></span>
+      <span style="background:#b05a6a" title="Berry"></span>
+    </div>
+    <div class="grid">
+      <figure class="card" data-cat="blush">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/OIP.webp" alt="Love Cake blush swatches">
+        <figcaption>Love Cake blush swatches</figcaption>
+      </figure>
+      <figure class="card" data-cat="blush">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/s-l400.jpg" alt="Mystery blush on cheeks">
+        <figcaption>Mystery blush on cheeks</figcaption>
+      </figure>
+      <figure class="card" data-cat="blush">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/swanliquidblush1.jpg" alt="Liquid blush shades 01 to 06">
+        <figcaption>Liquid blush shades 01 to 06</figcaption>
+      </figure>
+      <figure class="card" data-cat="blush">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/swanliquidblush2.jpg" alt="Liquid blush look">
+        <figcaption>Liquid blush look</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cat" id="lipstick">
+    <div class="cat-head">
+      <h2>Lipstick</h2>
+      <p>Lipsticks, lip tints and lip swatches in reds and pinks.</p >
+    </div>
+    <div class="shades" aria-label="Lipstick shades">
+      <span style="background:#d6303f" title="Cherry red"></span>
+      <span style="background:#e5645a" title="Orange red"></span>
+      <span style="background:#e98a97" title="Rose pink"></span>
+      <span style="background:#b3476a" title="Berry"></span>
+      <span style="background:#8c2f3b" title="Wine"></span>
+    </div>
+    <div class="grid">
+      <figure class="card" data-cat="lipstick">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/OIP%20(1).webp" alt="Orange-red lip tints">
+        <figcaption>Orange-red lip tints</figcaption>
+      </figure>
+      <figure class="card" data-cat="lipstick">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/OIP%20(4).webp" alt="Glossy lip color">
+        <figcaption>Glossy lip color</figcaption>
+      </figure>
+      <figure class="card" data-cat="lipstick">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/OIP.jpg" alt="Lipstick tubes">
+        <figcaption>Lipstick tubes</figcaption>
+      </figure>
+      <figure class="card" data-cat="lipstick">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/R.jpg" alt="Berry lip swatches">
+        <figcaption>Berry lip swatches</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cat" id="eyeshadow">
+    <div class="cat-head">
+      <h2>Eyeshadow</h2>
+      <p>Eyeshadow palettes and eye looks.</p >
+    </div>
+    <div class="shades" aria-label="Eyeshadow shades">
+      <span style="background:#2f4b8a" title="Navy"></span>
+      <span style="background:#8a6a5c" title="Mocha"></span>
+      <span style="background:#c99a8a" title="Rose gold"></span>
+      <span style="background:#e7c1c8" title="Soft pink"></span>
+      <span style="background:#7b5b8f" title="Plum"></span>
+    </div>
+    <div class="grid">
+      <figure class="card" data-cat="eyeshadow">
+  <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+  <img src="images/OIP%20(3).webp" alt="Rosy brown palette">
+  <figcaption>Rosy brown palette</figcaption>
+</figure>
+      <figure class="card" data-cat="eyeshadow">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/download%20(1).webp" alt="Eye look with palette">
+        <figcaption>Eye look with palette</figcaption>
+      </figure>
+      <figure class="card" data-cat="eyeshadow">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/download.webp" alt="Blue and brown palette">
+        <figcaption>Blue and brown palette</figcaption>
+      </figure>
+      <figure class="card" data-cat="eyeshadow">
+        <button class="fav" type="button" aria-label="Add to favorites" aria-pressed="false">♥</button>
+        <img src="images/OIP%20(2).webp" alt="Pink palette">
+        <figcaption>Pink palette</figcaption>
+      </figure>
+      <figur
